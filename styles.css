@@ -1,0 +1,135 @@
+/* color == 050229 */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+/* Styling the Navbar */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+    border-radius: 50%;   
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+/* Styling the heading */
+.content .TextBox{
+    position: relative;
+    max-width: 700px;
+}
+
+.content .TextBox h2{
+    color: #333;
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: bold;
+    
+}
+
+/* Styling 'Artos' */
+.content .TextBox h2 span{
+    position: relative;
+    color: #050229;
+    font-size: 1.2em;
+}
+
+/* Typing animation stying */
+.content .TextBox h2 span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-left: 2px solid #050229;
+    animation: typing 1.5s steps(5) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/* Styling the message */
+.content .TextBox p{
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Styling the Download Buttons */
+.download-button{
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+/* Styling the image */
+.content .imgBox img{
+    margin-left: 3rem;
+    max-width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(-10deg);
+}
+
+/* Styling the circle */
+.circle{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050229;
+    clip-path: circle(750px at right 1000px);
+}
