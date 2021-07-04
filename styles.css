@@ -1,6 +1,12 @@
 /* color == 050229 */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+:root{
+    --typewriterSpeed: 1s;
+    --typewriterChars: 5;
+    --bg-color: #fff;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +23,10 @@ section{
     justify-content: space-between;
     align-items: center;
     background: #fff;
+}
+
+.container-fluid{
+    padding: 3% 5%;
 }
 
 /* Styling the Navbar */
@@ -79,29 +89,48 @@ header ul li a {
 
 /* Styling 'Artos' */
 .content .TextBox h2 span{
+    font-size: 2.5rem;
     position: relative;
     color: #050229;
-    font-size: 1.2em;
-}
+    font-family: 'Courier Prime', monospace;
+    position: relative;
+    width: max-content;
+  }
 
 /* Typing animation stying */
+.content .TextBox h2 span::before,
 .content .TextBox h2 span::after{
     content: "";
     position: absolute;
     left: 0;
     height: 100%;
     width: 100%;
-    background: #fff;
-    border-left: 2px solid #050229;
-    animation: typing 1.5s steps(5) infinite;
 }
 
-@keyframes typing {
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
+.content .TextBox h2 span::before{ 
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterChars)) 1s forwards;
+}
+
+.content .TextBox h2 span::after{
+    width: 0.125em;
+    background: #050229;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterChars)) 1s forwards, blink 500ms steps(var(--typewriterChars)) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left:105%;
+        opacity: 0;
     }
 }
+
+@keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
 
 /* Styling the message */
 .content .TextBox p{
@@ -111,17 +140,16 @@ header ul li a {
 
 /* Styling the Download Buttons */
 .download-button{
-    margin-left: 3rem;
     margin-top: 3rem;
 }
 
 /* Styling the image */
 .content .imgBox img{
-    margin-left: 3rem;
-    max-width: 700px;
+    margin-right: -2.25rem;
+    max-width: 1000px;
+    height: auto;
     display: flex;
     justify-content: flex-end;
-    transform: rotate(-10deg);
 }
 
 /* Styling the circle */
@@ -132,4 +160,34 @@ header ul li a {
     height: 100%;
     background: #050229;
     clip-path: circle(750px at right 1000px);
+}
+
+/* Features */
+
+#features{
+    background-color: white;
+    position: relative;
+    text-align: center;
+}
+.feature-box{
+    padding: 4.5%;
+    background-color: #fff;
+}
+
+.features-title{
+    font-size: 1.4rem;
+    margin-top: 1.25rem;
+}
+
+p{
+    color: lightslategrey;
+}
+
+.icon{
+    color: #040229;
+    margin-bottom: 1.5rem;
+}
+
+.icon:hover{
+    color: #162252;
 }
