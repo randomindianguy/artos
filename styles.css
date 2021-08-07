@@ -162,6 +162,11 @@ header ul li a {
     clip-path: circle(750px at right 1000px);
 }
 
+@media(max-width: 991px)
+{
+    
+}
+
 /* Features */
 
 #features{
@@ -190,4 +195,58 @@ p{
 
 .icon:hover{
     color: #162252;
+}
+
+/* Testimonials */
+.testimonial-image{
+    width: 23%;
+    border-radius: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.carousel-item{
+    height: 32rem;
+    background-color: #040229;
+    color: white;
+    position: relative;
+    background-image: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.carousel-item p{
+    color: white;
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+/* Call To Action */
+#cta{
+    background-color: white;
+    text-align: center;
+    margin-top: 5rem;
+    /* padding: 5% 7%; */
+    color: #fff;
+}
+
+.cta-text{
+    color:  #040229;
+    margin: auto;
+}
+
+/* Footer */
+#footer{
+    background-color: #040229;;
+    margin:auto;
+    padding: 7% 5%;
+}
+
+.footer-icon{
+    margin: 20px;
 }
