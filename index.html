@@ -16,17 +16,21 @@
 
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <!-- CSS link -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Ion Icons -->
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
 
 </head>
 <body>
@@ -36,8 +40,8 @@
             <a href="#"><img src="logo.png" class="logo" alt="logo"></a>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </header>
 
@@ -45,186 +49,127 @@
             <div class="TextBox">
                 <h2>Everything you need <br>all in one place. We're  <span>Artos</span></h2>
                 <p><br>Track all your investments, and track your net worth. Artos is a privacy focused, one stop solution to track all your investments at one place and get holistic insights about your portfolio, and the market in general.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.rekisha.geld"><button type="button" class="btn btn-outline-dark btn-lg download-button"><i class="fab fa-google-play"></i> Download</button></a>
+                <a href="https://play.google.com/store/apps/details?id=com.rekisha.geld" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-outline-dark btn-lg download-button"><i class="fab fa-google-play"></i> Download</button></a>
             </div>
             <div class="imgBox">
                 <img src="phone.png" class="phone" alt="phone">
             </div>
         </div>     
     </section>
-    
+  
+  <!-- Features -->
   <section id="features">
       <div class="container-fluid">
         <div class="row">
           <div class="feature-box col-lg-4">
-              <i class="icon fas fa-user-secret fa-6x"></i>
+              <i class="icon fas fa-user-secret fa-8x"></i>
             <h3 class="features-title">Focus on Privacy</h3>
             <p>User privacy is at the core of our mission. You do not need to login to any service to use Artos, and your data never leaves your device.</p>
           </div>
           <div class="feature-box col-lg-4" >
-            <i class="icon fas fa-bullseye fa-6x"></i>
+            <i class="icon fas fa-bullseye fa-8x"></i>
             <h3 class="features-title">Analysis</h3>
             <p>Track your net worth over time, and track XIRR for individual assets, and across your portfolio.</p>
           </div>
           <div class="feature-box col-lg-4" >
-              <i class="icon fa-6x fas fa-search-plus"></i>
+              <i class="icon fa-6x fas fa-search-plus fa-8x"></i>
             <h3 class="features-title">Insights</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, repudiandae laboriosam velit modi natus quae.</p>
           </div>
         </div>
       </div>
-    </section>
+  </section>
    
    <!-- Testimonials -->
-    <div class="hero">
+   <div class="hero">
       <h1>Testimonials</h1>
-
+    
       <div class="testimonial-container">
-        <div class="indicator">
-          <span class="test-button active"></span>
-          <span class="test-button"></span>
-          <span class="test-button"></span>
-        </div>
-       <div class="testimonial">
-          <div class="slide-row">
-            <div class="slide-col">
-              <div class="user-text">
-                <p>I love Artos as it seems to work fine, the constant support is just amazing!</p>
-                <h3>Akshat, India</h3>
-              </div>
-              <div class="user-img">
-              <img src="images/face1.jpg">
-              </div>
-            </div>
-    
-            <div class="slide-col">
-              <div class="user-text">
-                <p>I'm in love with this app. The best part is the analysis section.</p>
-                <h3>Tushar, India</h3>
-              </div>
-              <div class="user-img">
-              <img src="images/face3.jpg">
-              </div>
-            </div>
-    
-            <div class="slide-col">
-              <div class="user-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, minima.</p>
-                <h3>Example Name</h3>
-              </div>
-              <div class="user-img">
-              <img src="images/face2.jpg">
-              </div>
-            </div>
+          <div class="indicator">
+              <span class="button active"></span>
+              <span class="button"></span>
+              <span class="button"></span>
           </div>
-       </div>
+          <div class="testimonial">
+              <div class="slide-row" id="slide">
+                  <div class="slide-col">
+                      <div class="user-text">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, eius?</p>
+                          <h3>Akshay</h3>
+                      </div>
+                      <div class="user-img">
+                          <img src="images/face1.jpg" alt="" width="380px" height="350px">
+                      </div>
+                  </div>
+                  <div class="slide-col">
+                      <div class="user-text">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, eius?</p>
+                          <h3>Akshay</h3>
+                      </div>
+                      <div class="user-img">
+                          <img src="images/face2.jpg" alt="" width="380px" height="350px">
+                      </div>
+                  </div>
+                  <div class="slide-col">
+                      <div class="user-text">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, eius?</p>
+                          <h3>Akshay</h3>
+                      </div>
+                      <div class="user-img">
+                          <img src="images/face3.jpg" alt="" width="380px" height="350px">
+                      </div>
+                  </div>
+              </div>
+          </div> 
       </div>
-      
-    </div>
-   <!-- Call to Action -->
-    <div id="cta">
-      <h2 class="cta-text">Track Your Portfolio Now!</h2>
-      <button type="button"  class="btn btn-outline-dark btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
     </div>
 
   <!-- FAQs -->
-  <!-- <section>
-    <div class="container">
-        <div class="accordian">
-            <div class="accordian-item" id="Question1">
-              <a class="accordian-link" href="#Question1">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, fugiat?
-                <ion-icon name="add" class="add"></ion-icon>
-                <ion-icon name="remove" class="remove"></ion-icon>
-              </a>
-              <div class="answer">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-               
-              </div>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">What do you mean by Privacy Focused?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
             </div>
-            
-            <div class="accordian-item" id="Question2">
-              <a class="accordian-link" href="#Question2">
-                Lorem ipsum dolor sit amet.
-                <ion-icon name="add" class="add"></ion-icon>
-                <ion-icon name="remove" class="remove"></ion-icon>
-              </a>
-              <div class="answer">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                
-              </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">Question 2</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
             </div>
-
-            <div class="accordian-item" id="Question3">
-              <a class="accordian-link" href="#Question3">
-                Lorem ipsum dolor sit amet consectetur.
-                <ion-icon name="add" class="add"></ion-icon>
-                <ion-icon name="remove" class="remove"></ion-icon>
-              </a>
-              <div class="answer">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-               
-              </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+            <h1 class="faq-page">Question 3</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
             </div>
+        </section>
 
-            <div class="accordian-item" id="Question4">
-              <a class="accordian-link" href="#Question4">
-               Lorem ipsum dolor sit amet consectetur.
-                <ion-icon name="add" class="add"></ion-icon>
-                <ion-icon name="remove" class="remove"></ion-icon>
-              </a>
-              <div class="answer">
-               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-               </p> 
-              </div>
-            </div>
-        </div>
-    </div>
-  </section> -->
-  <section>
-  <div class="faq-container-fluid">
-    <h2>Frequently Asked Questions</h2>
-
-      <div class="accordian">
-          <div class="icons"></div>
-          <h5>Lorem ipsum dolor sit amet consectetur?</h5>
-      </div>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sed.</p>
-      </div>
-
-      <div class="accordian">
-        <div class="icons"></div>
-        <h5>Lorem ipsum dolor sit amet consectetur?</h5>
-      </div>
-
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sed.</p>
-      </div>
-
-      <div class="accordian">
-        <div class="icons"></div>
-        <h5>Lorem ipsum dolor sit amet consectetur?</h5>
-      </div>
-
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sed.</p>
-      </div>
-  </div>
-</section>
+ 
   <!-- Footer -->
 
   <footer id="footer">
-    <a href="https://www.instagram.com/artos_app/"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
-    <a href = "mailto:rekisha.india@gmail.com? subject = Feedback & body = Message"><i class="footer-icon fas fa-envelope fa-2x"></i></a>
-    <a href="https://www.reddit.com/r/Artos/"><i class="footer-icon fab fa-reddit fa-2x"></i></a>
+    <a href="https://www.instagram.com/artos_app/" target="_blank" rel="noopener noreferrer"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
+    <a href = "mailto:rekisha.india@gmail.com? subject = Feedback & body = Message" target="_blank" rel="noopener noreferrer"><i class="footer-icon fas fa-envelope fa-2x"></i></a>
+    <a href="https://www.reddit.com/r/Artos/" target="_blank" rel="noopener noreferrer"><i class="footer-icon fab fa-reddit fa-2x"></i></a>
     <p>© Rekisha India/Sidharth Sundaram</p>
   </footer>
 
@@ -237,7 +182,9 @@
   <!-- IonIcons  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- JS links -->
 <script src="app.js"></script>
-    
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 </body>
 </html>

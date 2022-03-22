@@ -1,39 +1,42 @@
-var acc = document.getElementsByClassName('accordian');
-var i;
-var len = acc.length;
-for(i = 0; i < len; i++){
-    acc[i].addEventListener('click', function(){
-        this.classList.toggle('active');
-        var panel = this.nextElementSibling;
-        if(panel.style.maxHeight){
-            panel.style.maxHeight = null;
-        } else{
-            panel.style.maxHeight = panel.scrollHeight + 'px';
-        }
-    })
-
-var btn = document.getElementsByClassName("test-btn");
+var button = document.getElementsByClassName("button");
 var slide = document.getElementById("slide");
-btn[0].oneClick = function(){
-    slide.style.transform = "translateX(0px)";
-    for(i = 0; i < 3; i++){
-    btn.classList.remove("active");
+
+button[0].onclick = function(){
+    slide.style.transform = "translate(0px)";
+    for(i=0; i<3;i++){
+        button[i].classList.remove("active");
     }
     this.classList.add("active");
 }
-btn[1].oneClick = function(){
-    slide.style.transform = "translateX(-800px)";
-    for(i = 0; i < 3; i++){
-        btn.classList.remove("active");
-        }
-        this.classList.add("active");
+button[1].onclick = function(){
+    slide.style.transform = "translate(-800px)";
+    for(i=0; i<3;i++){
+        button[i].classList.remove("active");
     }
- btn[2].oneClick = function(){
-    slide.style.transform = "translateX(-1600px)";
-    for(i = 0; i < 3; i++){
-        btn.classList.remove("active");
-        }
-        this.classList.add("active");
+    this.classList.add("active");
+}
+button[2].onclick = function(){
+    slide.style.transform = "translate(-1600px)";
+    for(i=0; i<3;i++){
+        button[i].classList.remove("active");
     }
+    this.classList.add("active");
 }
+
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
 }
+

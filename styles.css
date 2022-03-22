@@ -137,7 +137,7 @@ header ul li a {
     font-size: 1.2rem;
 }
 
-/* Styling the Download Buttons */
+/* Styling the Download Button */
 .download-button{
     margin-top: 3rem;
 }
@@ -229,7 +229,6 @@ p{
 }
 
 /* Testimonials */
-
 .hero{
     background: #050229;
     height: 100vh;
@@ -246,7 +245,7 @@ p{
 
 .slide-row{
     display: flex;
-    width: 3200px;
+    width: 2400px;
     transition: 0.5s;
 }
 
@@ -261,17 +260,20 @@ p{
     top: 0;
     right: 0;
     height: 100%;
+    /* width: 450px;
+    height: 450px; */
+    margin-left: 6rem;
 }
 
 .user-img img{
     height: 100%;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .user-text{
     background: #2d3a59;
-    width: 520px;
-    height: 270px;
+    width: 450px;
+    height: 250px;
     position: absolute;
     left: 0;
     top: 50%;
@@ -286,10 +288,11 @@ p{
 .user-text p{
     font-size: 18px;
     line-height: 24px;
+    margin-top: 10px;
 }
 
 .user-text h3{
-    margin: 35px 0;
+    margin: 50px 0 5px;
     color: #fff;
 }
 
@@ -306,10 +309,10 @@ p{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -50%;
+    bottom: -50px;
 }
 
-.test-button{
+.button{
     display: inline-block;
     height: 15px;
     width: 15px;
@@ -330,34 +333,6 @@ p{
     overflow: hidden;
 }
 
-/* .testimonial-image{
-    width: 30%;
-    border-radius: 100%;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-}
-.carousel-item{
-    height: 32rem;
-    background-color: #c6c5d6;
-    color: white;
-    position: relative;
-    background-image: center;
-    background-size: cover;
-    text-align: center;
-}
-
-.carousel-item p{
-    color: white;
-}
-
-.container{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-} */
-
 /* Call To Action */
 #cta{
     background-color: white;
@@ -374,7 +349,150 @@ p{
 }
 
 /* FAQs */
-.faq-container-fluid{
+/* .faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+    text-align: center;
+    margin-top: 15rem;
+} */
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+/* .container h2{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .accordion a:hover,
+  .accordion a:hover::after {
+    cursor: pointer;
+    color: #ff5353;
+  }
+  .accordion a:hover::after {
+    border: 1px solid #ff5353;
+  }
+  .accordion a.active {
+    color: #ff5353;
+    border-bottom: 1px solid #ff5353;
+  }
+  .accordion a::after {
+    font-family: 'Ionicons';
+    content: '\f218';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: #7288a2;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+    text-align: center;
+  }
+  .accordion a.active::after {
+    font-family: 'Ionicons';
+    content: '\f209';
+    color: #ff5353;
+    border: 1px solid #ff5353;
+  }
+  .accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+  }
+  .accordion .content p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+  } */
+
+/* .faq-container-fluid{
     width: 50%;
     margin: 0 auto;
     margin-top: 100px;
@@ -431,7 +549,7 @@ p{
     overflow: hidden;
     max-height: 0;
     transition: all .5s ease-in;
-}
+} */
 
 /* .faq{
     text-align: center;
